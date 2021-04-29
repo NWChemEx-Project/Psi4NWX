@@ -9,7 +9,7 @@ from psi4nwx import *
 
 mm = sde.ModuleManager()
 nwx.load_modules(mm)
-psi4nwx.load_modules(mm)
+load_modules(mm)
 molecule = libchemist.MoleculeManager().at("water")
 basis = libchemist.apply_basis("sto-3g", molecule)
 canonical_mos = property_types.type.canonical_space_t["double"]

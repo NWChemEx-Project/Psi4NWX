@@ -2,7 +2,7 @@ from PyNWChemEx import *
 
 class Psi4SCF(sde.ModuleBase):
     def __init__(self):
-        super().__init__(Psi4SCF)
+        super(Psi4SCF, self).__init__(self, self)
         canonical_mos = property_types.type.canonical_space_t["double"]
         pt_type = property_types.ReferenceWavefunction["double", canonical_mos]
 
